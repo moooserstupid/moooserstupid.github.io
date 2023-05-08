@@ -68,9 +68,9 @@
             - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
-        <div class="main-title">Project Name</div>
-        <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div>
-        <image class="project-header-image" src="../assets/images/desktop.jpeg">
+        <div class="main-title">Breakout!</div>
+        <div class="body-text">A homage to the retro classic Breakout - now with added spice!</div>
+        <image class="project-header-image" src="../assets/images/breakout-game.PNG">
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -83,15 +83,36 @@
       <div id="project-details">
         <div class="subheader-text">Project Details / Background</div>
         <div class="project-details-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+          <div class="body-text">
+            </ul>
+            <h4>Features</h4>
+            <ul>
+            <li>"Slingshot" mechanic: the paddle can moved updown as well as leftright. The more the paddle is moved down the greater the velocity of the ball when it is hit. This adds a deeper level of skill to the game mechanics.</li>
+            <li>Simple tile map creation. You can use notepad to define a block structure and the game will use that to create the map.</li>
+            <li>Dynamic collision detection.</li>
+            <li>Game speeds up as more tiles are broken.</li>
+            <li>Scores recorded and displayed in a retro score table.</li>
+            </ul>
+            <h4>Progress </h4> 
+            <div id="progress-bar" class="all-rounded">
+              <div id="progress-bar-percentage" class="all-rounded" style="width: 90%"><span>90%</span></div>
+          </div>
+            <h4>Issues / areas to improve</h4>
+            <ul>
+            <li>Collision detection gets a bit wonky at higher speeds.</li>
+            <li>The way the blocks change color is inconsistent but this may be a result of the collision detection.</li>
+            <li>The increase in speed over the course of the level needs to be fine-tuned. The game is too difficult in its current state.</li>
+            <li>Some more sfx and some juicy effects for breaking blocks could be added to improve the feel of the game.</li>
+            <li>Hitting the ball with the paddle seems unfairly difficult. Adding some extra invisible grace length to the sides of the paddle would improve player experience and fun.</li>
+            </ul></div>
+          <div class="body-text"></div>
         </div>
       </div>
 
       <!-- IMAGE GALLERY -->
       <div id="project-gallery">
         <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-        <div class="subheader-text">Image Gallery</div>
+        <div class="subheader-text">Gallery</div>
         <div class="project-gallery-content">
             <!-- 
               TODO
@@ -117,17 +138,28 @@
                   - IMAGE_CAPTION: to the caption of the image
             -->
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/breakout-game.PNG" class="gallery-image">
+              <span class="image-caption">Level 1</span>
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/breakout-smiley.PNG" class="gallery-image">
+              <span class="image-caption">Demonstration of the map creation mechanism</span>
             </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/breakout-gameplay.webp" class="gallery-image">
+              <span class="image-caption">Slingshot mechanic and dynamic collision</span>
             </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/breakout-scores.PNG" class="gallery-image">
+              <span class="image-caption">Score screen</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <!-- <img src="../assets/images/breakout-over.PNG" class="gallery-image">
+              <span class="image-caption">Give your image a caption. People love context.</span> -->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/FnNYrvnQoRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+            
         </div>
       </div>
     </div>
@@ -140,7 +172,7 @@
         This should be the same across all pages.
       -->
       <a class="icon-link" target="_blank" href="https://github.com/moooserstupid">
-        <image src="./assets/icons/github.svg" class="footer-icon"/>
+        <image src="../assets/icons/github.svg" class="footer-icon"/>
       </a>
       <!-- 
         TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
@@ -156,7 +188,7 @@
         This should be the same across all pages.
       -->
       <a class="icon-link" href="mailto:aligulli123@gmail.com">
-        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
       </a>
     </div>
 

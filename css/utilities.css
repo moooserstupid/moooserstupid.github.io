@@ -98,6 +98,28 @@ a.no-underline:hover {
   cursor: pointer;
 }
 
+/* utility code for centered percentage progress bar */
+#progress-bar {
+  width: 100px;
+  background: #cccccc;
+  position: relative;
+}
+
+#progress-bar-percentage {
+  background: #3063A5;
+  padding: 5px 5px;
+  color: #FFF;
+  text-align: center;
+  height: 20px;
+}
+
+#progress-bar-percentage span {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
 /* Small devices (portrait tablets and large phones, 800px and below) */
 @media only screen and (max-width: 800px) {
   #footer {
